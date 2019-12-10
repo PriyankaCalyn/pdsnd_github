@@ -17,3 +17,4 @@ bikeshare.py
 Udacity Nano degree program (2019)
 https://git-scm.com/
 https://help.github.com
+Udacity tutors and other students
