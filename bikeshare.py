@@ -31,7 +31,7 @@ def get_filters():
     while True:
         month = input("Which month would you like to see data for January, February, March, April, May, June? or all: ")
         if month not in ("January", "February", "March", "April", "May", "June", "all"):
-            print('please select a valid option')
+            print("please select a valid option")
         else:
             break
     print('Your selection has been applied')
@@ -41,7 +41,7 @@ def get_filters():
     while True:
         day = input("Which day of the week would you like to see data for Mon, Tues, Weds, Thurs, Fri, Sat, Sun or all?: ")
         if day not in ("Mon", "Tues", "Weds", "Thurs", "Fri", "Sat", "Sun", "all"):
-            print('please select valid option')
+            print("please select valid option")
         else:
             break
     #print('no specfic week filtering applied')
@@ -108,7 +108,7 @@ def time_stats(df):
     frequent_hour = df['hour'].mode()[0]
     print("Most frequent hour:", frequent_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds" % (time.time() - start_time))
 
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
@@ -118,12 +118,12 @@ def station_stats(df):
 
     # TO DO: display most commonly used start station
     popular_start_station = str(df['start_station'].mode()[0])
-    print('The most popular starting bikeshare station is {}'.format(popular_start_station))
+    print("The most popular starting bikeshare station is {}".format(popular_start_station))
     # TO DO: display most commonly used end station
     popular_end_station = str(df['end_station'].mode()[0])
-    print('The most popular ending bikeshare station is {}'.format(popular_end_station))
+    print("The most popular ending bikeshare station is {}".format(popular_end_station))
     # TO DO: display most frequent combination of start station and end station trip
-    print('Most frequently used combination of start station and end station trip:', combination_station)
+    print("Most frequently used combination of start station and end station trip:"", combination_station)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
