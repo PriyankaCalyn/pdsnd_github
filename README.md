@@ -12,6 +12,7 @@ chicago.csv
 washington.csv
 new_york_city.csv
 bikeshare.py
+README.md
 
 ### Credits
 Udacity Nano degree program (2019)
